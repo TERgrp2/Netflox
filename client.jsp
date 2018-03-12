@@ -12,7 +12,7 @@
 <body>
 <h1>NetFlox</h1>
 <jsp:include page="query_video.jsp" flush="true" />
-
+Bonjour ! <c:out value="${client.getUsername()}" /><br/>
 
 
 

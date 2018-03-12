@@ -26,12 +26,28 @@ if (form.mdpClient.value!=form.pwd2.value)
 {    
 alert("les deux passeword sont différents！");    
 return false;    
+} 
+else  if (form.mailClient.value=="")    
+{    
+alert("le Mail est vide！");    
+return false;    
 }    
+else  if (form.telClient.value=="")    
+{    
+alert("le tel est vide！");    
+return false;    
+}  
 else  if (form.mdpClient.value=="")    
 {    
 alert("le passeword est vide！");    
 return false;    
 }    
+
+else  if (form.cbClient.value=="")    
+{    
+alert("le carte bancaire est vide！");    
+return false;    
+}  
 else return true;    
 }    
 </script>    
@@ -39,25 +55,26 @@ else return true;
    
   <body>  
   <center>  
-   <body bgcolor="#e3e3e3">  
+   <body bgcolor="White">  
   <h2>Inscription</h2>  
   <form action="check2.jsp" method="post" onSubmit="return isValid(this);">  
 <table>  
-  <tr><td>Nom : </td><td><input type="text" name="nomClient" size="20"/></td></tr> 
+  <tr><td>Nom *: </td><td><input type="text" name="nomClient" size="20"/></td></tr> 
   <tr><td>Prénom : </td><td><input type="text" name="prenomClient" size="20"/></td></tr> 
   <tr><td>Age : </td><td><input type="text" name="age" size="20"/></td></tr> 
-  <tr><td>Mail : </td><td><input type="text" name="mailClient" size="20"/></td></tr> 
-  <tr><td>Tel : </td><td><input type="text" name="telClient" size="20"/></td></tr> 
+  <tr><td>Mail *: </td><td><input type="text" name="mailClient" size="20"/></td></tr> 
+  <tr><td>Tel *: </td><td><input type="text" name="telClient" size="20"/></td></tr> 
    
-  <tr><td>Password : </td><td><input type="text" name="mdpClient" size="20"/></td></tr>  
-  <tr><td>Password vérification : </td><td><input type="text"name="pwd2" size="20"/></td><tr> 
+  <tr><td>Password *: </td><td><input type="text" name="mdpClient" size="20"/></td></tr>  
+  <tr><td>Password vérification *: </td><td><input type="text"name="pwd2" size="20"/></td><tr> 
   
-  <tr><td>Carte Bancaire : </td><td><input type="text" name="cbClient" size="20"/></td></tr> 
+  <tr><td>Carte Bancaire *: </td><td><input type="text" name="cbClient" size="20"/></td></tr> 
   
    
   <tr><td><input type="submit" value="Inscrire"/><td><input type="reset" value="Reset"/>  
   </table>  
 </form>  
+<b>* sont des champs obligatoire à remplir</b> 
   </center>  
    <br>  
   </body>  

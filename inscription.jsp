@@ -11,13 +11,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta charset="UTF-8">
 <title>Inscription du client</title>
 </head>
-<body>
- <a href="index_TER.jsp"><h1>NetFlox</h1></a>
+
+<a href="index_TER.jsp"><img src="image/logo.jpg" width="400" height="150" alt="erreur" /></a>
 
 <script language="javascript">    
 function isValid(form)    
 {    
-if (form.username.value=="")    
+if (form.nomClient.value=="")    
  {    
  alert("le nom est vide!");    
  return false;    
@@ -35,7 +35,7 @@ return false;
 else return true;    
 }    
 </script>    
-</head>  
+
    
   <body>  
   <center>  

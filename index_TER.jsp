@@ -10,7 +10,7 @@
 <title>NetFlox</title>
 </head>
 <body>
-<h1>NetFlox</h1>
+<a href="index_TER.jsp"><img src="image/logo.jpg" width="400" height="150" alt="erreur" /></a>
 
 <div class="cate">
 <%--<form method="post" action="display_video.jsp">

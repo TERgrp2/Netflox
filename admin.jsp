@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1>NetFlox</h1>
-
+Bonjour ! <c:out value="${admin.getUsernameA()}" /><br/>
 
 
 

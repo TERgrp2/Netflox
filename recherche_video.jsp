@@ -35,6 +35,7 @@ VideoDB db = (VideoDB) session.getAttribute("db");
 				nombre téléchargé : <c:out value="${v.download}" /><br/>
 				</c:forEach>
 			</ul>
+			</c:when>
 		<c:otherwise>
 		<b>Aucun résultat</b>
 		</c:otherwise>

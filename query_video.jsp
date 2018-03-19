@@ -10,7 +10,7 @@
 <body>
 	<%
 	
-	VideoDB db = (VideoDB) session.getAttribute("db");
+	VideoDB vid = (VideoDB) session.getAttribute("db");
 	if (db == null) {
 		db = new VideoDB();
 		db.importFile(getServletContext().getRealPath("/resources/video.txt"));
@@ -26,7 +26,7 @@
 
 
 <fieldset style="border-width: 5px; width:30%; height:220">
-<form method="post" action="recherche_video.jsp">
+<form method="get" action="RechercheServlet">
 Titre : <input type="text" name="title" size="30" maxlength="60" placeholder="recherche film par titre..." value="<%= cookies.get("last_title") %>"><br/>
 Catégotie :  <SELECT name = "cat">
    			 <option value="Comedie">Comedie
@@ -40,9 +40,10 @@ Année :      <SELECT name = "dateSortie">
    			 <option value="2016">2016
   			 <option value="2015">2015
   			 </SELECT> <br/>
-  			<a href="recherche_video.jsp"> <button type="submit">Valider</button></a>
-</fieldset></form>
-  			 </div>
+  			 <button type="submit">Valider</button>
+</fieldset>
+</form>
+
 
 
 </body>

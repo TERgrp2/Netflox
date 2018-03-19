@@ -7,11 +7,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Connexion</title>
 </head>
+<script language="javascript">    
+function isValid(form)    
+{    
+if (form.login.value=="")    
+ {    
+ alert("login est vide!");    
+ return false;    
+ }    
+else  if (form.pass.value=="")    
+{    
+alert("le mot de pass est vide！");    
+return false;    
+}  
+else return true;    
+}    
+</script>    
+
 <body>
 <div class="connextion">
  	<fieldset style="border-width: 5px; width:30%; height:220">
     <legend>CONNECT:</legend>
-  	<form method="post" action="ConnexionServlet">
+  	<form method="post" action="ConnexionServlet" onSubmit="return isValid(this);">
 	Login :	<input type="text" name="login" ></input><br/>
 	Password : <input type="password" name="pass"></input><br/>
 	<button type="submit">Connecter</button><input type="reset" value="Reset"/>

@@ -57,7 +57,7 @@ else return true;
   <center>  
    <body bgcolor="White">  
   <h2>Inscription</h2>  
-  <form action="check2.jsp" method="post" onSubmit="return isValid(this);">  
+  <form method="post" onSubmit="return isValid(this);">  
 <table>  
   <tr><td>Nom *: </td><td><input type="text" name="nomClient" size="20"/></td></tr> 
   <tr><td>Prénom : </td><td><input type="text" name="prenomClient" size="20"/></td></tr> 

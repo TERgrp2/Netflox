@@ -33,6 +33,10 @@ VideoDB db = (VideoDB) session.getAttribute("db");
 				Nombre vue : <c:out value="${v.view}" /><br/>
 				nombre téléchargé : <c:out value="${v.download}" /><br/>
 				</c:forEach>
+				<form method="post" action="ClientServlet">
+				<button type="submit" name="achat">acheter</button>
+                <button type="submit" name="location">louer</button>
+                </form>
 			</ul>
 			</c:when>
 		<c:otherwise>

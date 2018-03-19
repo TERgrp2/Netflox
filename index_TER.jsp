@@ -12,27 +12,10 @@
 <body>
 <a href="index_TER.jsp"><img src="image/logo.jpg" width="400" height="150" alt="erreur" /></a>
 
-<div class="cate">
-<%--<form method="post" action="display_video.jsp">
-	<%
-	
-	VideoDB db = (VideoDB) session.getAttribute("db");
-	if (db == null) {
-		db = new VideoDB();
-		db.importFile(getServletContext().getRealPath("/resources/movie.txt"));
-		session.setAttribute("db",db);
-	}
-	String title = "";
-	HashMap<String,String> cookies = new HashMap<>();
-	for (Cookie c : request.getCookies())
-	{
-		cookies.put(c.getName(), c.getValue());
-	}
-%>
---%>
+
+
 <jsp:include page="query_video.jsp" flush="true" />
 
-<%--insérer des fichiers::::: <jsp:include page="TERtable1.jsp" flush="true" />--%><br/>
 <jsp:include page="connexion.jsp" flush="true" />	
 
 <div class="newClient">
@@ -41,6 +24,7 @@ VOUS ETES NOUVEAU CLIENT?
 </div> 
 <br/>
 <jsp:include page="recherche_video.jsp" flush="true" />
+
 <div class="filmTable">  
  	 <ul class="imglist"> 
       

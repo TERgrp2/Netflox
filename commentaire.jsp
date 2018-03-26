@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="js/jquery1.8.0.min.js"></script>
 </head>
-
+<body>
 <h1>liste des commentaires</h1>
 
  <c:forEach items="${page.list }" var="msg">
@@ -32,6 +32,13 @@
 				}
 				</script>
 	 <input type="text" placeholder=numDislike>
+	 <%-- les boutons "spam"--%>
+	  <input type="button" value="spam" onclick="spam();">
+				<script>
+				function spam(){
+				spam=true; 
+				}
+				</script>
  </c:forEach>
  
  <input type="button" value="<-" onclick="tournerPage(${page.pageIndex-1})"
@@ -71,3 +78,6 @@
    document.getElementById("myform").submit();
   }
  </script>
+ </body>
+ </html>
+ 

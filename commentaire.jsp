@@ -1,6 +1,3 @@
-
-//.....Documentation...........https://www.cnblogs.com/MuJH/p/6907644.html
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -17,14 +14,24 @@
   <p>Autheur：${msg.author }</p>
   <p>Contenu：${msg.message }</p>
   <p>Date：${msg.pubdate }</p>
-   <input type="button" value="like" onclick="countNum();">
+  <%-- les boutons "like" --%>
+   <input type="button" value="like" onclick="countNumLike();">
 				<script>
-				var num=0;
-				function countNum(){
-				num++; 
+				var numLike=0;
+				function countNumLike(){
+				numLike++; 
 				}
 				</script>
-	 <input type="text" placeholder=num>
+	 <input type="text" placeholder=numLike>
+	   <%-- les boutons "dislike"--%>
+	  <input type="button" value="dislike" onclick="countNumDislike();">
+				<script>
+				var numDislike=0;
+				function countNumDislike(){
+				numDislike++; 
+				}
+				</script>
+	 <input type="text" placeholder=numDislike>
  </c:forEach>
  
  <input type="button" value="<-" onclick="tournerPage(${page.pageIndex-1})"

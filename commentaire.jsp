@@ -17,12 +17,21 @@
   <p>Autheur：${msg.author }</p>
   <p>Contenu：${msg.message }</p>
   <p>Date：${msg.pubdate }</p>
+   <input type="button" value="like" onclick="countNum();">
+				<script>
+				var num=0;
+				function countNum(){
+				num++; 
+				}
+				</script>
+	 <input type="text" placeholder=num>
  </c:forEach>
- <input type="button" value="<-" onclick="fenye(${page.pageIndex-1})"
+ 
+ <input type="button" value="<-" onclick="tournerPage(${page.pageIndex-1})"
  <c:if test="${page.pageIndex eq 1 }">disabled="disabled"</c:if>
  >
  
- <input type="button" value="->" onclick="fenye(${page.pageIndex+1})"
+ <input type="button" value="->" onclick="tournerPage(${page.pageIndex+1})"
  <c:if test="${page.pageIndex eq page.totalPage }">disabled="disabled"</c:if>
  >
  
@@ -49,7 +58,7 @@
    }
    return true;
   }
-  function fenye(pageIndex){
+  function tournerPage(pageIndex){
    document.getElementById("pageIndex").value=pageIndex;
    document.getElementById("myform").action="msg";
    document.getElementById("myform").submit();

@@ -31,12 +31,20 @@ VOUS ETES NOUVEAU CLIENT?
             <a href="#" target="_blank">
                <img src="image/coco.jpg" width="200" height="200" alt="erreur" />
                <span>coco</span>
+                <form method="post" action="ClientServlet">
                <button type="submit">acheter</button>
                <button type="submit">louer</button>
+               </form>
             </a>
 
-             <a href="#" target="_blank">
-               <img src="image/coco.jpg" width="200" height="200" alt="erreur" />
+             <a href="#" onclick="countNum();"><img src="image/coco.jpg" width="200" height="200" alt="erreur" /></a>
+				<script>
+				var num=0;
+				function countNum(){
+				num++;
+				}
+				</script>
+               
                <span>coco</span>
                <button type="submit">acheter</button>
                <button type="submit">louer</button>

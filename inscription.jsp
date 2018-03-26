@@ -57,7 +57,7 @@ else return true;
   <center>  
    <body bgcolor="White">  
   <h2>Inscription</h2>  
-  <form method="post" onSubmit="return isValid(this);">  
+  <form method="post" onSubmit="return isValid(this);" action ="InscriptionServlet">  
 <table>  
   <tr><td>Nom *: </td><td><input type="text" name="nomClient" size="20"/></td></tr> 
   <tr><td>Prénom : </td><td><input type="text" name="prenomClient" size="20"/></td></tr> 
@@ -65,8 +65,8 @@ else return true;
   <tr><td>Mail *: </td><td><input type="text" name="mailClient" size="20"/></td></tr> 
   <tr><td>Tel *: </td><td><input type="text" name="telClient" size="20"/></td></tr> 
    
-  <tr><td>Password *: </td><td><input type="text" name="mdpClient" size="20"/></td></tr>  
-  <tr><td>Password vérification *: </td><td><input type="text"name="pwd2" size="20"/></td><tr> 
+  <tr><td>Password *: </td><td><input type="password" name="mdpClient" size="20"/></td></tr>  
+  <tr><td>Password vérification *: </td><td><input type="password"name="pwd2" size="20"/></td><tr> 
   
   <tr><td>Carte Bancaire *: </td><td><input type="text" name="cbClient" size="20"/></td></tr> 
   

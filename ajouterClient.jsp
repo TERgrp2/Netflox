@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ajouter un film</title>
+<title>ajouter un Client</title>
    <style type="text/css">
             table {
                 border: 1px solid pink;

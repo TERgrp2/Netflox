@@ -11,12 +11,12 @@
 </head>
 <body>
 <a href="index_TER.jsp"><img src="image/logo.jpg" width="400" height="150" alt="erreur" /></a>
-<jsp:include page="query_video.jsp" flush="true" />
+
 Bonjour ! <c:out value="${client.getUsername()}" /><br/>
 
 
-
-
+<jsp:include page="query_video.jsp" flush="true" />
+<jsp:include page="recherche_video.jsp" flush="true" />
 
 
 

@@ -53,7 +53,7 @@
  
  <form action="msg?mth=save" method="post" id="myform" onsubmit="return check()">
   <p>login：<input type="text" name="author" id="author" value="${author }"/></p>
-  <p>commentaire：<input type="text" name="message" id="message" value="${message }"/></p>
+  <p>commentaire：<textarea rows="10" cols="30" name="message" id="message" value="${message }"/></p>
   <p><input type="submit" value="commenter"/></p>
   <input type="hidden" name="pageIndex" id="pageIndex">
  </form>

@@ -59,7 +59,7 @@ VOUS ETES NOUVEAU CLIENT?
     
     </ul> 
 </div>
-
+<jsp:include page="commentaire.jsp" flush="true" />
 
 <%--
 <ul><%

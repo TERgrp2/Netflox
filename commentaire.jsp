@@ -50,7 +50,7 @@
   <p><input type="submit" value="commenter"/></p>
   <input type="hidden" name="pageIndex" id="pageIndex">
  </form>
- 
+  
  <script>
   function check(){
    if((document).getElementById("author").value==""){

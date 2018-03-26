@@ -13,7 +13,12 @@
  <c:forEach items="${spam}" var="s">
             <tr>
             	<td>${s.msg }</td>
-                <td><a href="DeleteSpamServlet?id=${s.id }">Supprimer</a></td>
+                <td><a href="DeleteSpamServlet?id=${s.id }">Supprimer</a> | <input type="button" value="enleverSpam" onclick="enleverSpam();">
+				<script>
+				function enleverSpam(){
+				spam= false; 
+				}
+				</script></td>
             </tr>
 
  </body>
